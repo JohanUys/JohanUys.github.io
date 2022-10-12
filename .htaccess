@@ -1,0 +1,6 @@
+AuthName "Roster"
+AuthType Basic
+AuthUserFile  JohanUys.github.io/.htpasswds
+
+Require valid-user
+ 
