@@ -1,0 +1,499 @@
+/* Primary stylesheet for all webpages in Haukai resturant site */
+
+/*rwd formatting*/
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/*full division of columns for rwd mobile-first design*/
+.col-12 {width: 100%;}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+h1 {
+  text-align:center;
+}
+
+/*Footer formatting*/
+#footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+}
+#footer a:link{
+  color: white;
+  text-decoration: none;
+}
+#footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: blue; 
+}
+footer a.active{
+  color: white;
+  text-decoration: none;
+}
+
+/*Navbar formetting*/
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  z-index: 1;
+  display: block;
+}
+#logo {
+  display:block;
+}
+#navbar a {
+  display: block;
+  color: black;
+  text-align: center;
+  margin-bottom: 2.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: lightgrey;
+}
+#navbar a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+/*background image and text formatting Index Page*/
+#restaurantbackground {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  padding-left: 44%;
+  padding-right: 44%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 17.5%, 0.65);
+}
+.centered a:link {
+  color: white;
+  text-decoration: none;
+}
+.centered a:visited {
+  color: white;
+  text-decoration: none;
+}
+.centered a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.centered a.active {
+  color: white;
+  text-decoration: none;
+}
+.backgroundcontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+  white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+#dininginfo p {
+  text-align: center;
+}
+
+/*map formatting*/
+#mapframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio*/
+}
+.embeddedmapframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*footer formatting*/
+#footer a {
+  display: block;
+  color: black;
+  text-align: center;
+  margin-bottom: 2.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  
+}
+#footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+}
+#footer a:link{
+  color: white;
+  text-decoration: none;
+  }
+  
+#footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: blue; 
+} 
+#footer a.active{
+  color: white;
+  text-decoration: none;
+}
+
+/*food menu formatting*/
+.foodmenu {
+  width:100%;
+}
+.foodmenu caption {
+  color: burlywood;
+  font-size: x-large;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+.foodmenu td.price {
+  text-align: right;
+}
+.foodmenu td.description {
+  color: grey;
+}
+
+/*drinks menu formatting*/
+.drinksmenu {
+  width:100%;
+}
+.drinksmenu caption {
+  color: burlywood;
+  font-size: x-large;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+.drinksmenu th.drinktype{
+  text-align: left;
+  color: burlywood;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.drinksmenu th.bottleglass{
+  text-align: right;
+  color: burlywood;
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.drinksmenu td.price {
+  text-align: right;
+}
+
+/*Index page embedded menu formatting*/
+div.menuframe {
+  border-style: double;
+  border-color: gray;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.embeddedmenu{
+  display:block;
+}
+
+/*Gallery formatting*/
+ .headingtext p {
+  text-align: center;
+}
+.headingtext h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+.galleryimages {
+  position: relative;
+  width: 100%;
+}
+.galleryimage {
+  width: 100%;
+  height: auto;
+}
+.galleryoverlaytext {
+  visibility: hidden;
+}
+
+/* Form formatting */
+#formframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.embeddedform {
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 726px;
+}
+
+/*formatting for desktop and larger screen sizes*/
+@media only screen and (min-width: 768px) {
+  .backgroundcontainer p {
+    font-size: 175%;
+  }
+
+  h1 {
+    text-align:left;
+  }
+
+  /*Navbar formatting*/
+  #navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: white;
+    font-size: 17px;
+  }
+  #navbar a.active {
+    background-color: rgb(185, 185, 185);
+  }
+  #navbar a.login {
+    float: right;
+  }
+
+  /*Sticky navbar formatting*/
+  .content {
+    padding: 16px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 99%;
+  }
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+  /*12 columns to separate the page for rwd*/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 91.66%;}
+
+  /*dining information formatting*/
+  #dininginfo h1 {
+    text-align:center;
+  }
+  #dininginfo p {
+    text-align: center;
+  }
+  
+  /*footer formatting*/
+  #footer a {
+    display: block;
+    color: black;
+    text-align: center;
+    margin-bottom: 2.5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  #footer {
+    background-color: #333;
+    text-align: center;
+    color: white;
+  }
+  #footer a:link{
+    color: white;
+    text-decoration: none;
+    }
+  #footer a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  #footer a:hover {
+    color: blue; 
+  } 
+  #footer a.active{
+    color: white;
+    text-decoration: none;
+  }
+
+  /*food menu formatting*/
+  .foodmenu {
+    width:100%;
+  }
+  .foodmenu caption {
+    color: burlywood;
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+  .foodmenu td.price {
+    text-align: right;
+  }
+  .foodmenu td.description {
+    color: grey;
+  }
+
+  /*drinks menu formatting*/
+  .drinksmenu {
+    width:100%;
+  }
+  .drinksmenu caption {
+    color: burlywood;
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+  .drinksmenu th.drinktype{
+    text-align: left;
+    color: burlywood;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+  }
+  .drinksmenu th.bottleglass{
+    text-align: right;
+    color: burlywood;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+  }
+  .drinksmenu td.price {
+    text-align: right;
+  }
+
+/*Index page embedded menu formatting*/
+  div.menuframe {
+    border-style: double;
+    border-color: gray;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .embeddedmenu{
+    display:block;
+  }
+
+  /* Gallery formetting */
+  .headingtext p {
+    text-align: center;
+  }
+  .headingtext h1 {
+    text-align: center;
+    font-size: xx-large;
+  }
+  .galleryimages {
+    position: relative;
+    width: 100%;
+  }
+  .galleryimage {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(0, 0%, 17.5%, 0.65);
+  }
+  .galleryimages:hover .overlay {
+    opacity: 1;
+  }
+  .galleryoverlaytext {
+    visibility: visible;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Form formatting */
+  #formframe {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .embeddedform {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  #formheader {
+    border-style: double;
+  }
+}

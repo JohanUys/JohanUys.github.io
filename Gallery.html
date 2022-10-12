@@ -1,0 +1,152 @@
+<!--Gallery Page for Haukai Restaurant Website-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    
+    </head>
+    
+    <body>
+    
+        <!-- Navigation bar -->
+        <div class="row">
+            <div class="col-12">
+                <nav id="navbar">
+                    <h1 aria-label="title" id="logo">Haukai Restaurant</h1>
+                    <a class="" href="index.html">Home</a>
+                    <a class="" href="Bookings.html">Make a Booking</a>
+                    <a class="" href="Menu.html">Menu</a>
+                    <a class="active" href="Gallery.html">Gallery</a>
+                    <a class="" href="Contact.html">Contact us</a>
+                    <a class="" href="About.html">About</a>
+                    <a class="login" href= "Roster.html">Log In</a>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Gallery Text -->
+        <div class="row">
+            <div class="col-12">
+                <div class="headingtext">
+                    <h1 aria-label="gallery heading">Gallery</h1>
+                    <p>Haukai specializes in creating uniquely kiwi tastes using only the freshest, premium ingredients.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <div class="galleryimages">
+                    <a target="_blank" href="images/bread.jpeg"> 
+                        <img src="images/bread.jpeg" alt="Rewena Bread, a traditional Māori bread" class="galleryimage">
+                    </a>
+                    <div class="overlay">
+                        <div class="galleryoverlaytext">Rewena Bread</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="galleryimages">
+                    <a target="_blank" href="images/chowder.jpeg"> 
+                        <img src="images/chowder.jpeg" alt="Seafood Chowder, a creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread." class="galleryimage">
+                    </a>
+                    <div class="overlay">
+                        <div class="galleryoverlaytext">Seafood Chowder</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="galleryimages">
+                    <a target="_blank" href="images/venison.jpeg"> 
+                        <img src="images/venison.jpeg" alt="Venison, crusted with horopito, served with glazed plums, cabbage salad and red wine Jus." class="galleryimage">
+                    </a>
+                    <div class="overlay">
+                        <div class="galleryoverlaytext">Venison</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="galleryimages">
+                    <a target="_blank" href="images/raw-fish.jpeg"> 
+                        <img src="images/raw-fish.jpeg" alt="Raw Fish, dried snapper fish marinated in coconut cream, served with tomatoes and spring onions." class="galleryimage">
+                    </a>
+                    <div class="overlay">
+                        <div class="galleryoverlaytext">Raw Fish</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="galleryimages">
+                    <a target="_blank" href="images/combination-seafood.jpeg"> 
+                        <img src="images/combination-seafood.jpeg" alt="Combination Seafood, a platter of mixed seafood including mussells and prawns" class="galleryimage">
+                    </a>
+                    <div class="overlay">
+                        <div class="galleryoverlaytext">Combination Seafood</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="galleryimages">
+                    <a target="_blank" href="images/crayfish.jpeg"> 
+                        <img src="images/crayfish.jpeg" alt="Crayfish and Oysters, roasted crayfish served with fresh oysters" class="galleryimage">
+                    </a>
+                    <div class="overlay">
+                        <div class="galleryoverlaytext">Crayfish and Oysters</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="galleryimages">
+                    <a target="_blank" href="images/prawns.jpeg"> 
+                        <img src="images/prawns.jpeg" alt="Prawns, a large portion of local prawns cooked to perfection" class="galleryimage">
+                    </a>
+                    <div class="overlay">
+                        <div class="galleryoverlaytext">Prawns</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="galleryimages">
+                    <a target="_blank" href="images/salad.jpeg"> 
+                        <img src="images/salad.jpeg" alt="Salad, a side salad with pine nuts, little gem lettuce and heirloom tomatoes drizzled with the finest quality balsamic vinegar" class="galleryimage">
+                    </a>
+                    <div class="overlay">
+                        <div class="galleryoverlaytext">Salad</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Footer -->
+    <div class="row">
+        <div class="col-12">
+            <footer id="footer">
+                <a href="Privacy.html">Privacy Statement</a>
+                <a href="About.html">About Us</a>
+                <a href="Contact.html">Contact us</a>
+            </footer>
+        </div>
+    </div>
+
+    <!--script for a sticky navbar-->
+    <script>
+        window.onscroll = function() {stickyNav()};
+            
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+            
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } 
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+</html> 

@@ -1,0 +1,80 @@
+<!--Reservations Page for Haukai Restaurant Website-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    
+    </head>
+    
+    <body>
+    
+        <!--Navigation bar-->
+        <div class="row">
+            <div class="col-12">
+                <nav id="navbar">
+                    <h1 aria-label="title" id="logo">Haukai Restaurant</h1>
+                    <a class="" href="index.html">Home</a>
+                    <a class="active" href="Bookings.html">Make a Booking</a>
+                    <a class="" href="Menu.html">Menu</a>
+                    <a class="" href="Gallery.html">Gallery</a>
+                    <a class="" href="Contact.html">Contact us</a>
+                    <a class="" href="About.html">About</a>
+                    <a class="login" href= "Roster.html">Log In</a>
+                </nav>
+            </div>
+        </div>
+    
+        <!-- Booking Info -->
+        <div class="row">
+            <div class="col-12">
+                <div class="headingtext">
+                    <h1 aria-label="make a booking">Make a Booking</h1>
+                    <p>Please complete the form below by entering your details in order to submit your booking.<br>
+                        You can view our <a href="Privacy.html">privacy page</a> for more information on how we use the details you have entered
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking form -->
+        <div class="row">
+            <div class="col-12">
+                <div class="formframe">
+                    <iframe class="embeddedform" src="https://docs.google.com/forms/d/e/1FAIpQLSfobDKJ_OqhhtRO8piNslDHM6ZdKDYz6tixaPpdWs85suvULQ/viewform?embedded=true" width="640" height="913" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+   
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-12">
+                <footer id="footer">
+                    <a href="Privacy.html">Privacy Statement</a>
+                    <a href="About.html">About Us</a>
+                    <a href="Contact.html">Contact us</a>
+                </footer>
+            </div>
+        </div>
+
+        <!--script for a sticky navbar-->
+        <script>
+            window.onscroll = function() {stickyNav()};
+                
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+                
+            function stickyNav() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } 
+                else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+</body>
+</html> 

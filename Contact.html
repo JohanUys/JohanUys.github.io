@@ -1,0 +1,99 @@
+<!--Contact Page for Haukai Restaurant Website-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    
+    </head>
+    
+    <body>
+    
+        <!--Navigation bar-->
+        <div class="row">
+            <div class="col-12">
+                <nav id="navbar">
+                    <h1 aria-label="title" id="logo">Haukai Restaurant</h1>
+                    <a class="" href="index.html">Home</a>
+                    <a class="" href="Bookings.html">Make a Booking</a>
+                    <a class="" href="Menu.html">Menu</a>
+                    <a class="" href="Gallery.html">Gallery</a>
+                    <a class="active" href="Contact.html">Contact us</a>
+                    <a class="" href="About.html">About</a>
+                    <a class="login" href= "Roster.html">Log In</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="row">
+            <div class="col-12">
+                <div class="headingtext">
+                    <h1 aria-label="contact information">Contact Us</h1>
+                    <p>Phone: (09) 401 4019<br>
+                        Address: 1 Island Street, Kerikeri, Bay of Islands<br>
+                        <br><br>
+                        Monday: closed<br>
+                        Tuesday: closed<br>
+                        Wednesday: 6pm-late<br>
+                        Thursday: 6pm-late<br>
+                        Friday: 6pm-late<br>
+                        Saturday: 6pm-late<br>
+                        Sunday: 6pm-late<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="row">
+            <div class="col-12">
+                <div class="formframe">
+                    <iframe aria-label="embedded contact form" class="embeddedform"src="https://docs.google.com/forms/d/e/1FAIpQLScX2ofQ82d2uFCYYeQYtowWuSNPPOfEA_gWxS_Lea55X6EPlw/viewform?embedded=true" width="640" height="726" frameborder="0" marginheight="0" marginwidth="0" alt="contact form">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Embedded map -->
+        <div class="row">
+            <div class="col-12">
+                <div class="map">
+                    <div id="mapframe">
+                        <iframe aria-label="embedded map" class="embeddedmapframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25330.7824872043!2d173.94786636461086!3d-35.22816545759247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb73e31b0728b%3A0x500ef6143a2d500!2sKerikeri!5e0!3m2!1sen!2snz!4v1663145658915!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="map of Kerikeri"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-12">
+                <footer id="footer">
+                    <a href="Privacy.html">Privacy Statement</a>
+                    <a href="About.html">About Us</a>
+                    <a href="Contact.html">Contact us</a>
+                </footer>
+            </div>
+        </div>
+
+        <!--script for a sticky navbar-->
+        <script>
+            window.onscroll = function() {stickyNav()};
+                
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+                
+            function stickyNav() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } 
+                else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+</body>
+</html> 

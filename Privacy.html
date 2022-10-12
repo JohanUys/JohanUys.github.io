@@ -1,0 +1,42 @@
+<!--Reservations Page for Haukai Restaurant Website-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <body>
+
+    <h1>Privacy Page</h1>
+    <p>
+
+        We collect personal information from you, including information about your:
+        
+            name
+            contact details
+        
+        We collect your personal information in order to:
+        
+            manage bookings
+        
+        Providing some information is optional. If you choose not to enter your contact information, we'll be unable to confirm your booking.
+        
+        You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. If you’d like to ask for a copy of your information, or to have it corrected, please contact us at haukairestaurant@email.com, or 09 401 4019, or 1 Island Street Kerikeri, Bay of Islands.
+        </p>
+
+        <!--script for a sticky navbar-->
+        <script>
+            window.onscroll = function() {stickyNav()};
+                
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+                
+            function stickyNav() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } 
+                else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+    </body>
+</html> 
